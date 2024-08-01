@@ -1,2 +1,10 @@
-package inventory;public class Weapon {
+package inventory;
+
+public class Weapon extends Item {
+    int damage;
+
+    public Weapon(String name, int value, int damage) {
+        super(name, value);
+        this.damage = damage;
+    }
 }

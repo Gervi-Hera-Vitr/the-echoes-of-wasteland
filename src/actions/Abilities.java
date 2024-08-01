@@ -1,19 +1,28 @@
 package actions;
 
-import inventory.Inventory;
+import character.Hero;
+import inventory.Armor;
+import inventory.Item;
 
-import java.util.Arrays;
+import java.util.stream.Collectors;
 
-public class Actions {
+public class Abilities {
 
-    boolean canCheckInventory;
-    boolean canCheckHunger;
-    boolean canCheckThirst;
-    boolean canTalk;
-    boolean canFight;
-    boolean canCheckQuest;
+    Hero thisHero;
 
-    public Actions(boolean canCheckInventory, boolean canCheckHunger, boolean canCheckThirst, boolean canCheckQuest, boolean canTalk, boolean canFight) {
+    boolean canCheckInventory = true;
+    boolean canCheckHunger = true;
+    boolean canCheckThirst = true;
+    boolean canTalk = true;
+    boolean canFight = true;
+    boolean canCheckQuest = true;
+
+    public Abilities(
+            Hero myhero) {
+        thisHero = myhero;
+    }
+
+    public Abilities(boolean canCheckInventory, boolean canCheckHunger, boolean canCheckThirst, boolean canCheckQuest, boolean canTalk, boolean canFight) {
         this.canCheckInventory = canCheckInventory;
         this.canCheckHunger = canCheckHunger;
         this.canCheckThirst = canCheckThirst;
@@ -66,7 +75,7 @@ public class Actions {
     }
 
     public void showActions() {
-        System.out.println("Available Actions:");
+        System.out.println("Available Abilities:");
         System.out.println("Check Inventory");
         System.out.println("Check Hunger");
         System.out.println("Talk");
@@ -76,7 +85,23 @@ public class Actions {
     }
 
     public void checkInventory() {
-//        System.out.println("Inventory: " + Arrays.toString(Inventory.items.toArray()));
+        var myItemsString = thisHero.inventory.items.stream().map(Item::toString).collect(Collectors.joining("\n", "- ", ";"));
+
+        System.out.printf(
+                """
+                        Hero's Current Inventory:
+                           Armor:    %s
+                           Weapons:  %s
+                        
+                           Inventory size: %d
+                            %s
+                        %n""",
+                thisHero.inventory.equippedArmor.stream().map(Armor::toString).collect(Collectors.joining("\n","- ",";")),
+                thisHero.inventory.equippedWeapon.toString(),
+                thisHero.inventory.items.size(),
+                myItemsString);
+
+        //        System.out.println("Inventory: " + Arrays.toString(Inventory.items.toArray()));
     }
 
     public void checkHunger() {
