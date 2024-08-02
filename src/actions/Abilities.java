@@ -75,13 +75,26 @@ public class Abilities {
     }
 
     public void showActions() {
+
         System.out.println("Available Abilities:");
-        System.out.println("Check Inventory");
-        System.out.println("Check Hunger");
-        System.out.println("Talk");
-        System.out.println("Check Thirst");
-        System.out.println("Check Quest");
-        System.out.println("Fight");
+        if (canCheckInventory) {
+            System.out.println("Check Inventory");
+        }
+        if (canCheckHunger) {
+            System.out.println("Check Hunger");
+        }
+        if (canTalk) {
+            System.out.println("Talk");
+        }
+        if (canCheckThirst) {
+            System.out.println("Check Thirst");
+        }
+        if (canCheckQuest) {
+            System.out.println("Check Quest");
+        }
+        if (canFight) {
+            System.out.println("Fight");
+        }
     }
 
     public void checkInventory() {

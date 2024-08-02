@@ -52,6 +52,9 @@ public class PointSystem {
                     charisma++;
                     points--;
                     break;
+                    case "intelligence":
+                        intelligence++;
+                        break;
                 case "agility":
                     agility++;
                     points--;

@@ -36,10 +36,7 @@ public class Hero {
         this.maxHunger = maxHunger;
         this.maxThirst = maxThirst;
 
-        inventory.items.add(new Item("Undies", 1));
-        inventory.items.add(new Item("Rock", 1));
-        inventory.equipArmor(new Armor("Shit Helmet", 2, 1));
-        inventory.equipWeapon(new Weapon("Shit Long-Stick", 1, 2));
+
 
     }
 
