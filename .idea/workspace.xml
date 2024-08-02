@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e0cef3-f2b4-473e-9e01-63a8abad12cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/SpecialPerks.java" afterDir="false" />
+    <list default="true" id="12e0cef3-f2b4-473e-9e01-63a8abad12cd" name="Changes" comment="Made Special perks Enum.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/Abilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/Dialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/Dialogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/SpecialPerks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/SpecialPerks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/character/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/character/PointSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/character/PointSystem.java" afterDir="false" />
     </list>
@@ -28,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -37,25 +35,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/anton/IdeaProjects/The Echoes Of The Wasteland/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/anton/IdeaProjects/The Echoes Of The Wasteland/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="character" />
@@ -106,8 +104,17 @@
       <workItem from="1722560563960" duration="2486000" />
       <workItem from="1722563790272" duration="548000" />
       <workItem from="1722613103550" duration="223000" />
-      <workItem from="1722613482777" duration="1721000" />
+      <workItem from="1722613482777" duration="4841000" />
     </task>
+    <task id="LOCAL-00001" summary="Made Special perks Enum.">
+      <option name="closed" value="true" />
+      <created>1722615463004</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722615463004</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +130,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made Special perks Enum." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Special perks Enum." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

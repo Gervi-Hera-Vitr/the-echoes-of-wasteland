@@ -11,11 +11,17 @@ public class PointSystem {
     int agility;
     int luck;
     int points;
+    String Strength;
+    String Perception;
+    String Endurance;
+    String Charisma;
+    String Intelligence;
+    String Agility;
+    String Luck;
 
-    public PointSystem() {
-    }
 
-    public PointSystem(int strength, int perception, int endurance, int charisma, int intelligence, int agility, int luck, int points) {
+
+    public PointSystem(int strength, int perception, int endurance, int charisma, int intelligence, int agility, int luck, int points, String Strength, String Perception, String Endurance, String Charisma, String Intelligence, String Agility, String Luck ) {
         strength = strength;
         perception = perception;
         endurance = endurance;
@@ -24,12 +30,44 @@ public class PointSystem {
         agility = agility;
         luck = luck;
         points = points;
+        this.Strength = Strength;
+        this.Perception = Perception;
+        this.Endurance = Endurance;
+        this.Charisma = Charisma;
+        this.Intelligence = Intelligence;
+        this.Agility = Agility;
+        this.Luck = Luck;
     }
 
     public void addPointsMethod() {
         points++;
     }
 
+    public String getAgility() {
+
+        return Agility;
+    }
+
+    public String getEndurance() {
+
+        return Endurance;
+    }
+    public String getIntelligence() {
+        return Intelligence;
+    }
+    public String getStrength() {
+        return Strength;
+    }
+    public String getPerception() {
+        return Perception;
+    }
+
+    public String getCharisma() {
+        return Charisma;
+    }
+    public String getLuck() {
+        return Luck;
+    }
     public void changeStatsMethod(Scanner scanner) {
         while (points > 0) {
             System.out.println("Enter a trait to increase, you have " + points + " points (Strength, Perception, Endurance, Charisma, Agility, Luck) or 'end' to stop:");
