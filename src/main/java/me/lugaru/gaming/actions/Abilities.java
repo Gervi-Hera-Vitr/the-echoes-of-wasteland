@@ -29,6 +29,7 @@ public class Abilities {
     public Abilities(
             Hero myhero) {
         thisHero = myhero;
+        // hero
     }
 
     public Abilities(boolean canCheckInventory, boolean canCheckHunger, boolean canCheckThirst, boolean canCheckQuest, boolean canTalk, boolean canFight, boolean canSteal, boolean canCraft, boolean canPickLock, boolean canWorldMove, boolean canHack, boolean canScrap, boolean canLoot, boolean canBarter, boolean canMove) {
