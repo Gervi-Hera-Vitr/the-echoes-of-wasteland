@@ -1,6 +1,5 @@
 package me.lugaru.gaming.actions;
 
-import character.PointSystem;
 
 public enum SpecialPerks {
     PICKPOCKET("pick pocket", "Be able to steal undetected!", 5, 0, "Agility"),
