@@ -1,10 +1,7 @@
-package character;
+package me.lugaru.gaming.character;
 
-import actions.Abilities;
-import inventory.Armor;
-import inventory.Inventory;
-import inventory.Item;
-import inventory.Weapon;
+import me.lugaru.gaming.actions.Abilities;
+import me.lugaru.gaming.inventory.Inventory;
 
 public class Hero {
     int maxHunger;

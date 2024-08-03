@@ -1,4 +1,4 @@
-package actions;
+package me.lugaru.gaming.actions;
 
 public class Dialogue {
     public void startGameMethodDialogue() {

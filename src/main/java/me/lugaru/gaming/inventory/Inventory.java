@@ -1,4 +1,4 @@
-package inventory;
+package me.lugaru.gaming.inventory;
 
 import java.util.ArrayList;
 import java.util.List;

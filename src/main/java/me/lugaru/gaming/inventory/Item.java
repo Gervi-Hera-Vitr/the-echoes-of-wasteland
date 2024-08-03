@@ -1,4 +1,4 @@
-package inventory;
+package me.lugaru.gaming.inventory;
 
 public class Item {
     public String name;

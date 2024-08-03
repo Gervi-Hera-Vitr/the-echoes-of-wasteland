@@ -1,8 +1,8 @@
-package actions;
+package me.lugaru.gaming.actions;
 
-import character.Hero;
-import inventory.Armor;
-import inventory.Item;
+import me.lugaru.gaming.character.Hero;
+import me.lugaru.gaming.inventory.Item;
+import me.lugaru.gaming.inventory.Armor;
 
 import java.util.stream.Collectors;
 

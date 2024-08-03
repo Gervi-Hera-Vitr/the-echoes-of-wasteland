@@ -1,4 +1,4 @@
-package character;
+package me.lugaru.gaming.character;
 
 import java.util.Scanner;
 

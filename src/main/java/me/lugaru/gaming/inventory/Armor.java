@@ -1,4 +1,4 @@
-package inventory;
+package me.lugaru.gaming.inventory;
 
 public class Armor extends Item {
     int protection;
