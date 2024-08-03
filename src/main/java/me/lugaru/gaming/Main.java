@@ -16,4 +16,4 @@ public class Main {
         dialogue.summaryMethod();
         playerCharacter.pointSystem.gameMethodStart(scanner);
     }
-}
+}//
