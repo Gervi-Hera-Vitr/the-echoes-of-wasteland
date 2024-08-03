@@ -42,32 +42,13 @@ public class PointSystem {
     public void addPointsMethod() {
         points++;
     }
-
-    public String getAgility() {
-
-        return Agility;
-    }
-
-    public String getEndurance() {
-
-        return Endurance;
-    }
-    public String getIntelligence() {
-        return Intelligence;
-    }
-    public String getStrength() {
-        return Strength;
-    }
-    public String getPerception() {
-        return Perception;
-    }
-
-    public String getCharisma() {
-        return Charisma;
-    }
-    public String getLuck() {
-        return Luck;
-    }
+    public String getAgility() { return Agility;}
+    public String getEndurance() {return Endurance;}
+    public String getIntelligence() {return Intelligence;}
+    public String getStrength() {return Strength;}
+    public String getPerception() {return Perception;}
+    public String getCharisma() {return Charisma;}
+    public String getLuck() {return Luck;}
     public void changeStatsMethod(Scanner scanner) {
         while (points > 0) {
             System.out.println("Enter a trait to increase, you have " + points + " points (Strength, Perception, Endurance, Charisma, Agility, Luck) or 'end' to stop:");
@@ -114,8 +95,7 @@ public class PointSystem {
 
         System.out.println("Final stats - Strength: " + strength + ", Perception: " + perception + ", Endurance: " + endurance + ", Charisma: " + charisma + ", Agility: " + agility + ", Luck: " + luck);
     }
-
-    void gameBeginningMethod(Scanner scanner) {
+   public void gameMethodStart(Scanner scanner) {
         while (points > 0) {
             System.out.println("You have " + points + " points remaining.");
 

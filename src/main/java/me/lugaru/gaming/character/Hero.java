@@ -44,4 +44,6 @@ public class Hero {
     int resetMaxHpMethod() {
         return maxHp;
     }
+
 }
+
