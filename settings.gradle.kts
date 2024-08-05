@@ -8,6 +8,7 @@ pluginManagement {
     val jacocoToolVersion: String by settings
 
     val toolchainsFoojayResolverVersion: String by settings
+    val ioFreeFairVersion: String by settings
 
     repositories {
         gradlePluginPortal()
@@ -24,6 +25,11 @@ pluginManagement {
 
 //      https://docs.gradle.org/current/userguide/jacoco_plugin.html
         jacoco
+
+//        https://docs.freefair.io/gradle-plugins/current/reference/
+        id("io.freefair.lombok") version ioFreeFairVersion
+
+
 //        https://docs.gradle.org/current/userguide/toolchains.html
         id("org.gradle.toolchains.foojay-resolver-convention") version toolchainsFoojayResolverVersion
     }

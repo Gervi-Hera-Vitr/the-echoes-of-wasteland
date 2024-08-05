@@ -30,6 +30,8 @@ log.warn("""
 plugins {
     application
     jacoco
+
+    id("io.freefair.lombok")
 }
 
 repositories {
@@ -107,6 +109,13 @@ tasks.withType<JacocoCoverageVerification> {
         }
     }
 }
+
+
+tasks.withType<Wrapper> {
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+
 
 /**
  * Registering a temporary custom task of inspecting my toolchain.
