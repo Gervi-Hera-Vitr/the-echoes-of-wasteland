@@ -30,6 +30,8 @@ log.warn("""
 plugins {
     application
     jacoco
+
+    id("io.freefair.lombok")
 }
 
 repositories {
