@@ -8,23 +8,24 @@ import java.util.stream.Collectors;
 
 public class Abilities {
 
-    Hero thisHero;
-
-    boolean canCheckInventory = true;
-    boolean canCheckHunger = true;
-    boolean canCheckThirst = true;
-    boolean canTalk = true;
-    boolean canFight = true;
-    boolean canCheckQuest = true;
-    boolean canSteal = true;
-    boolean canBarter = true;
-    boolean canLoot = true;
-    boolean canPickLock = true;
-    boolean canWorldMove = true;
-    boolean canHack = true;
-    boolean canCraft = true;
-    boolean canScrap = true;
-    boolean canMove = true;
+   public Hero thisHero;
+   public boolean canCheckWorldMap = true;
+   public boolean canCheckInventory = true;
+   public boolean canCheckHunger = true;
+   public boolean canCheckThirst = true;
+    public boolean canTalk = true;
+    public boolean canFight = true;
+    public boolean canCheckQuest = true;
+    public boolean canSteal = true;
+    public boolean canBarter = true;
+    public boolean canLoot = true;
+    public boolean canPickLock = true;
+    public boolean canWorldMove = true;
+    public boolean canHack = true;
+    public boolean canCraft = true;
+    public boolean canScrap = true;
+    public boolean canMove = true;
+    public boolean canCheckAreaMap = true;
 
     public Abilities(
             Hero myhero) {
@@ -32,7 +33,7 @@ public class Abilities {
         // hero
     }
 
-    public Abilities(boolean canCheckInventory, boolean canCheckHunger, boolean canCheckThirst, boolean canCheckQuest, boolean canTalk, boolean canFight, boolean canSteal, boolean canCraft, boolean canPickLock, boolean canWorldMove, boolean canHack, boolean canScrap, boolean canLoot, boolean canBarter, boolean canMove) {
+    public Abilities(boolean canCheckInventory, boolean canCheckHunger, boolean canCheckThirst, boolean canCheckQuest, boolean canTalk, boolean canFight, boolean canSteal, boolean canCraft, boolean canPickLock, boolean canWorldMove, boolean canHack, boolean canScrap, boolean canLoot, boolean canBarter, boolean canMove, boolean canCheckAreaMap, boolean canCheckWorldMap) {
         this.canCheckInventory = canCheckInventory;
         this.canCheckHunger = canCheckHunger;
         this.canCheckThirst = canCheckThirst;
@@ -44,10 +45,13 @@ public class Abilities {
         this.canLoot = canLoot;
         this.canScrap = canScrap;
         this.canMove = canMove;
-        this.canWorldMove = canWorldMove;
         this.canHack = canHack;
         this.canCraft = canCraft;
         this.canPickLock = canPickLock;
+        this.canWorldMove = canWorldMove;
+        this.canCheckWorldMap = canCheckWorldMap;
+        this.canCheckAreaMap = canCheckAreaMap;
+
     }
 
     public void doAction(String actionMade) {
@@ -129,7 +133,16 @@ public class Abilities {
                     lockPicking();
                 }
                 break;
-
+                case "check world map":
+                    if (canWorldMove) {
+                        checkWorldMap();
+                    }
+                    break;
+                    case "check area map":
+                        if (canCheckAreaMap) {
+                            checkAreaMap();
+                        }
+                        break;
             case "end":
                 System.out.println("Ending action.");
                 break;
@@ -187,6 +200,12 @@ public class Abilities {
         }
         if (canPickLock){
             System.out.println("Pick Lock");
+        }
+        if (canCheckAreaMap) {
+            System.out.println("Check Area Map");
+        }
+        if (canCheckWorldMap) {
+            System.out.println("Check World Map");
         }
     }
 
@@ -255,6 +274,12 @@ public class Abilities {
     }
     public void looting(){
         System.out.println("Looting");
+    }
+    public void checkWorldMap(){
+        System.out.println("Checking World Map...");
+    }
+    public void checkAreaMap(){
+        System.out.println("Checking Area Map...");
     }
 }
 
