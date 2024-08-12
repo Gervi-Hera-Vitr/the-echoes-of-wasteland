@@ -17,16 +17,9 @@ public class Main {
         dialogue.startGameMethodDialogue();
         dialogue.summaryMethod();
         playerCharacter.pointSystem.gameMethodStart(scanner);
-       playerCharacter.worldMap.initializeMap();
+        playerCharacter.worldMap.initializeMap();
         playerCharacter.worldMap.setCurrentPlace("Home Village");
 
-        while (true){
 
-            playerCharacter.abilities.showActions();
-            playerCharacter.abilities.doAction(scanner.nextLine());
-            if( playerCharacter.hp < 1){
-               break;
-            }
-        }
     }
-}//
+}

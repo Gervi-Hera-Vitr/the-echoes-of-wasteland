@@ -38,12 +38,66 @@ public class Hero {
 
     }
     public void checkMap(){
-        if (worldMap.currentPlace == "Home Village"){
+        if (worldMap.currentPlace.equals("Home Village")){
+            abilities.canCheckInventory = true;
+            abilities.canCheckHunger = true;
+            abilities.canCheckThirst = true;
+            abilities.canTalk = true;
+            abilities.canFight = false;
+            abilities.canCheckQuest = true;
+            abilities.canSteal = false;
+            abilities.canBarter = true;
+            abilities.canLoot = true;
+            abilities.canScrap = false;
+            abilities.canMove = true;
+            abilities.canHack = false;
+            abilities.canCraft = false;
+            abilities.canPickLock = true;
+            abilities.canWorldMove = true;
+            abilities.canCheckWorldMap = true;
+            abilities.canCheckAreaMap = true;
+        } else if (worldMap.currentPlace.equals("village pub")){
+            abilities.canCheckInventory = true;
+            abilities.canCheckHunger = true;
+            abilities.canCheckThirst = true;
+            abilities.canTalk = true;
+            abilities.canFight = false;
+            abilities.canCheckQuest = true;
+            abilities.canSteal = false;
+            abilities.canBarter = true;
+            abilities.canLoot = false;
+            abilities.canScrap = false;
+            abilities.canMove = false;
+            abilities.canHack = false;
+            abilities.canCraft = false;
+            abilities.canPickLock = false;
+            abilities.canWorldMove = true;
+            abilities.canCheckWorldMap = true;
+            abilities.canCheckAreaMap = true;
+        } else if (worldMap.currentPlace.equals("house")){
+            abilities.canCheckInventory = true;
+            abilities.canCheckHunger = true;
+            abilities.canCheckThirst = true;
+            abilities.canTalk = true;
+            abilities.canFight = false;
+            abilities.canCheckQuest = true;
+            abilities.canSteal = false;
+            abilities.canBarter = false;
+            abilities.canLoot = true;
+            abilities.canScrap = false;
+            abilities.canMove = false;
+            abilities.canHack = false;
+            abilities.canCraft = false;
+            abilities.canPickLock = false;
+            abilities.canWorldMove = true;
+            abilities.canCheckWorldMap = true;
             abilities.canCheckAreaMap = true;
         }
+
     }
     public void setName(String name) {
         this.name = name;
+
     }
 
     int resetMaxHpMethod() {

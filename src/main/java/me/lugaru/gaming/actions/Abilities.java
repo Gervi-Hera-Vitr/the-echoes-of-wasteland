@@ -3,6 +3,7 @@ package me.lugaru.gaming.actions;
 import me.lugaru.gaming.character.Hero;
 import me.lugaru.gaming.inventory.Item;
 import me.lugaru.gaming.inventory.Armor;
+import me.lugaru.gaming.world.WorldMap;
 
 import java.util.stream.Collectors;
 
@@ -230,15 +231,15 @@ public class Abilities {
     }
 
     public void checkHunger() {
-        System.out.println("Checking Hunger...");
+        System.out.println(thisHero.hunger);
     }
 
     public void checkThirst() {
-        System.out.println("Checking Thirst...");
+        System.out.println(thisHero.thirst);
     }
 
     public void checkQuest() {
-        System.out.println("Checking Quest...");
+        System.out.println();
     }
 
     public void talk() {
@@ -276,10 +277,10 @@ public class Abilities {
         System.out.println("Looting");
     }
     public void checkWorldMap(){
-        System.out.println("Checking World Map...");
+        System.out.println(thisHero.worldMap.areas);
     }
     public void checkAreaMap(){
-        System.out.println("Checking Area Map...");
+    System.out.println(thisHero.worldMap.subAreas);
     }
 }
 
