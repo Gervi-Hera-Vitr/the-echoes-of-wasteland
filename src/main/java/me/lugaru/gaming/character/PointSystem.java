@@ -11,6 +11,7 @@ public class PointSystem {
     int agility;
     int luck;
     int points;
+
     String Strength;
     String Perception;
     String Endurance;
@@ -19,17 +20,15 @@ public class PointSystem {
     String Agility;
     String Luck;
 
-
-
-    public PointSystem(int strength, int perception, int endurance, int charisma, int intelligence, int agility, int luck, int points, String Strength, String Perception, String Endurance, String Charisma, String Intelligence, String Agility, String Luck ) {
-        strength = strength;
-        perception = perception;
-        endurance = endurance;
-        charisma = charisma;
-        intelligence = intelligence;
-        agility = agility;
-        luck = luck;
-        points = points;
+    public PointSystem(int strength, int perception, int endurance, int charisma, int intelligence, int agility, int luck, int points, String Strength, String Perception, String Endurance, String Charisma, String Intelligence, String Agility, String Luck) {
+        this.strength = strength;
+        this.perception = perception;
+        this.endurance = endurance;
+        this.charisma = charisma;
+        this.intelligence = intelligence;
+        this.agility = agility;
+        this.luck = luck;
+        this.points = points;
         this.Strength = Strength;
         this.Perception = Perception;
         this.Endurance = Endurance;
@@ -42,44 +41,54 @@ public class PointSystem {
     public void addPointsMethod() {
         points++;
     }
-    public String getAgility() { return Agility;}
-    public String getEndurance() {return Endurance;}
-    public String getIntelligence() {return Intelligence;}
-    public String getStrength() {return Strength;}
-    public String getPerception() {return Perception;}
-    public String getCharisma() {return Charisma;}
-    public String getLuck() {return Luck;}
+
+    public String getStrength() { return Strength; }
+    public String getPerception() { return Perception; }
+    public String getEndurance() { return Endurance; }
+    public String getCharisma() { return Charisma; }
+    public String getIntelligence() { return Intelligence; }
+    public String getAgility() { return Agility; }
+    public String getLuck() { return Luck; }
+
     public void changeStatsMethod(Scanner scanner) {
         while (points > 0) {
-            System.out.println("Enter a trait to increase, you have " + points + " points (Strength, Perception, Endurance, Charisma, Agility, Luck) or 'end' to stop:");
+            System.out.println("Enter a trait to increase, you have " + points + " points (Strength, Perception, Endurance, Charisma, Intelligence, Agility, Luck) or 'end' to stop:");
             String input = scanner.next();
 
             switch (input.toLowerCase()) {
                 case "strength":
                     strength++;
+                    Strength = "Strength is now " + strength;
                     points--;
                     break;
                 case "perception":
                     perception++;
+                    Perception = "Perception is now " + perception;
                     points--;
                     break;
                 case "endurance":
                     endurance++;
+                    Endurance = "Endurance is now " + endurance;
                     points--;
                     break;
                 case "charisma":
                     charisma++;
+                    Charisma = "Charisma is now " + charisma;
                     points--;
                     break;
-                    case "intelligence":
-                        intelligence++;
-                        break;
+                case "intelligence":
+                    intelligence++;
+                    Intelligence = "Intelligence is now " + intelligence;
+                    points--;
+                    break;
                 case "agility":
                     agility++;
+                    Agility = "Agility is now " + agility;
                     points--;
                     break;
                 case "luck":
                     luck++;
+                    Luck = "Luck is now " + luck;
                     points--;
                     break;
                 case "end":
@@ -93,9 +102,10 @@ public class PointSystem {
             System.out.println("Points remaining: " + points);
         }
 
-        System.out.println("Final stats - Strength: " + strength + ", Perception: " + perception + ", Endurance: " + endurance + ", Charisma: " + charisma + ", Agility: " + agility + ", Luck: " + luck);
+        System.out.println("Final stats - " + Strength + ", " + Perception + ", " + Endurance + ", " + Charisma + ", " + Intelligence + ", " + Agility + ", " + Luck);
     }
-   public void gameMethodStart(Scanner scanner) {
+
+    public void gameMethodStart(Scanner scanner) {
         while (points > 0) {
             System.out.println("You have " + points + " points remaining.");
 
@@ -111,13 +121,16 @@ public class PointSystem {
             points = allocatePoints(scanner, "Charisma", points, charisma);
             if (points == 0) break;
 
+            points = allocatePoints(scanner, "Intelligence", points, intelligence);
+            if (points == 0) break;
+
             points = allocatePoints(scanner, "Agility", points, agility);
             if (points == 0) break;
 
             points = allocatePoints(scanner, "Luck", points, luck);
         }
 
-        System.out.println("Final stats - Strength: " + strength + ", Perception: " + perception + ", Endurance: " + endurance + ", Charisma: " + charisma + ", Agility: " + agility + ", Luck: " + luck);
+        System.out.println("Final stats - " + Strength + ", " + Perception + ", " + Endurance + ", " + Charisma + ", " + Intelligence + ", " + Agility + ", " + Luck);
     }
 
     private int allocatePoints(Scanner scanner, String trait, int pointsRemaining, int traitValue) {
@@ -130,7 +143,36 @@ public class PointSystem {
         if (pointsToAdd > pointsRemaining) {
             System.out.println("You don't have enough points. Try again.");
         } else {
-            traitValue += pointsToAdd;
+            switch (trait.toLowerCase()) {
+                case "strength":
+                    strength += pointsToAdd;
+                    Strength = "Strength is now " + strength;
+                    break;
+                case "perception":
+                    perception += pointsToAdd;
+                    Perception = "Perception is now " + perception;
+                    break;
+                case "endurance":
+                    endurance += pointsToAdd;
+                    Endurance = "Endurance is now " + endurance;
+                    break;
+                case "charisma":
+                    charisma += pointsToAdd;
+                    Charisma = "Charisma is now " + charisma;
+                    break;
+                case "intelligence":
+                    intelligence += pointsToAdd;
+                    Intelligence = "Intelligence is now " + intelligence;
+                    break;
+                case "agility":
+                    agility += pointsToAdd;
+                    Agility = "Agility is now " + agility;
+                    break;
+                case "luck":
+                    luck += pointsToAdd;
+                    Luck = "Luck is now " + luck;
+                    break;
+            }
             pointsRemaining -= pointsToAdd;
         }
         return pointsRemaining;
