@@ -19,7 +19,10 @@ public class Main {
         playerCharacter.pointSystem.gameMethodStart(scanner);
         playerCharacter.worldMap.initializeMap();
         playerCharacter.worldMap.setCurrentPlace("Home Village");
-
+        do {
+            playerCharacter.worldMap.initializeMap();
+            playerCharacter.abilities.doAction(scanner.nextLine());
+        } while (playerCharacter.hp < 1);
 
     }
 }
