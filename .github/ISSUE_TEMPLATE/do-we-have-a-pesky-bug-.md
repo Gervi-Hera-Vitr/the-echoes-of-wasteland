@@ -14,11 +14,11 @@ assignees: CaptainLugaru
 ... for example,
 
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+2. Click on '...'
+3. Scroll down to '...'
+4. See error 🤨
 
-**What should be instead?**
+**What should have been instead?**
 
 **Have any screenshots?**
 
