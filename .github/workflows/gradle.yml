@@ -43,5 +43,8 @@ jobs:
 # - https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
 # - https://github.com/gradle/actions
 #
+#   Attestations:
+# - https://github.com/actions/attest-build-provenance
+#
 #   Marketplace:
 # - https://github.com/marketplace?type=actions
