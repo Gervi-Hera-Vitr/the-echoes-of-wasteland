@@ -1,0 +1,13 @@
+# rdd13r on 2024-08-13
+# Note: use globals as {{ site.my_goo_var }}.
+
+title: The Echoes of the Wasteland
+email: 72951616+CaptainLugaru@users.noreply.github.com
+description: >-
+  A Goo Game! 😜
+github_username:  CaptainLugaru
+theme: minima
+plugins:
+  - jekyll-feed
+exclude:
+  - support/
