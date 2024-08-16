@@ -16,12 +16,13 @@ public class Hero {
   public  int damage;
   public  int shield;
   public   int stamina;
+  public int maxWeight;
 
     public PointSystem pointSystem = new PointSystem(0,0,0,0,0,0,0,21,"Strength", "Perception", "Endurance", "Charisma", "Intelligence", "Agility", "Luck");
     public Inventory inventory = new Inventory();
     public Abilities abilities = new Abilities(this);
     public WorldMap worldMap = new WorldMap(null,null,null,null, null);
-    public Hero(String name, int damage, int shield, int stamina, int hp, int maxHp, int exp, int hunger, int thirst, int maxThirst, int maxHunger) {
+    public Hero(String name, int damage, int shield, int stamina, int hp, int maxHp, int exp, int hunger, int maxHunger, int thirst, int maxThirst, int maxCarry) {
         this.name = name;
         this.damage = damage * (pointSystem.strength / 2);
         this.shield = shield + pointSystem.endurance;
@@ -33,9 +34,8 @@ public class Hero {
         this.hunger = hunger;
         this.maxHunger = maxHunger;
         this.maxThirst = maxThirst;
-
-
-
+        this.maxWeight = maxCarry;
+        this.inventory.hero = this;
     }
     public void checkMap(){
         if (worldMap.currentPlace.equals("Home Village")){

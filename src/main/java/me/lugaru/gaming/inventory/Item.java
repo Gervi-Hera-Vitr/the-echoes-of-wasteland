@@ -6,10 +6,14 @@ public class Item {
      * Sell value.
      */
     int value;
+    int amount;
+    int weight;
 
-    public Item(String name, int value) {
+    public Item(String name, int value, int amount, int weight) {
         this.name = name;
         this.value = value;
+        this.amount = amount;
+        this.weight = weight;
     }
 
     @Override
