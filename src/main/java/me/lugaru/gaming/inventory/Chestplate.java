@@ -1,5 +1,5 @@
 package me.lugaru.gaming.inventory;
-
+//
 public class Chestplate extends ArmorPeice {
     double protection;
     public Chestplate(String name, int value, double protection, int weight) {

@@ -1,5 +1,5 @@
 package me.lugaru.gaming.inventory;
-
+//
 import me.lugaru.gaming.character.Hero;
 
 import java.util.ArrayList;

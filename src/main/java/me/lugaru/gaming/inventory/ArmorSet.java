@@ -1,5 +1,5 @@
 package me.lugaru.gaming.inventory;
-
+//
 public class ArmorSet {
     double protection;
     public Helmet head;

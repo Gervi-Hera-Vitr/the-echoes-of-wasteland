@@ -1,5 +1,5 @@
 package me.lugaru.gaming.inventory;
-
+//
 
 public enum Items {
     PICKPOCKET("pick pocket", "Be able to steal undetected!", 5, 0, "Agility"),

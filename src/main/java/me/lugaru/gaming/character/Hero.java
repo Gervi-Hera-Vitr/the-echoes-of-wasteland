@@ -17,7 +17,7 @@ public class Hero {
   public  int shield;
   public   int stamina;
   public int maxWeight;
-
+//
     public PointSystem pointSystem = new PointSystem(0,0,0,0,0,0,0,21,"Strength", "Perception", "Endurance", "Charisma", "Intelligence", "Agility", "Luck");
     public Inventory inventory = new Inventory();
     public Abilities abilities = new Abilities(this);

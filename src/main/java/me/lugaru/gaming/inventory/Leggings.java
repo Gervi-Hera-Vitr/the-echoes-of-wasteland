@@ -1,5 +1,5 @@
 package me.lugaru.gaming.inventory;
-
+//
 public class Leggings extends ArmorPeice {
     double protection;
     public Leggings(String name, int value, double protection, int weight) {
