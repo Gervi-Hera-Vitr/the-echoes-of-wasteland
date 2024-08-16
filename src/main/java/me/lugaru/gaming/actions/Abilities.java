@@ -3,12 +3,13 @@ package me.lugaru.gaming.actions;
 import me.lugaru.gaming.character.Hero;
 import me.lugaru.gaming.inventory.Item;
 import me.lugaru.gaming.inventory.Armor;
-import me.lugaru.gaming.world.WorldMap;
 
+
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Abilities {
-
+Scanner scan = new Scanner(System.in);
    public Hero thisHero;
    public boolean canCheckWorldMap = true;
    public boolean canCheckInventory = true;
@@ -76,12 +77,13 @@ public class Abilities {
                 break;
             case "talk":
                 if (canTalk) {
-                    talk();
+                    talk(scan.nextLine());
                 }
                 break;
             case "fight":
                 if (canFight) {
                     fight();
+
                 }
                 break;
             case "check quest":
@@ -151,6 +153,7 @@ public class Abilities {
                 System.out.println("Invalid action.");
                 break;
         }
+
     }
 
     public void showActions() {
@@ -242,8 +245,16 @@ public class Abilities {
         System.out.println();
     }
 
-    public void talk() {
-        System.out.println("Talking...");
+    public void talk(String personTalking) {
+
+            System.out.println("Who do you wanna talk to:");
+            System.out.println(thisHero.worldMap.people);
+            if (personTalking.equals("Village Elder")){
+                System.out.println("Success");
+            }
+
+
+
     }
 
     public void fight() {

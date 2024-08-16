@@ -9,5 +9,8 @@ public class Dialogue {
 
     public void summaryMethod() {
         System.out.println("You wake up in the village of New Eden, the remnants of what lay in the past. Made out of a group of wasteland survivors and vault dwellers.");
+
     }
+
+
 }

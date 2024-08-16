@@ -21,14 +21,13 @@ public class Main {
         dialogue.startGameMethodDialogue();
         dialogue.summaryMethod();
         playerCharacter.pointSystem.gameMethodStart(scanner);
-        playerCharacter.worldMap.initializeMap();
         playerCharacter.worldMap.setCurrentPlace("Home Village");
         playerCharacter.inventory.addItem(bottleCaps);
-        playerCharacter.inventory.addItem(Leather_Helmet); 
+        playerCharacter.inventory.addItem(Leather_Helmet);
+        playerCharacter.worldMap.initializeMap();
         do {
-            playerCharacter.worldMap.initializeMap();
-            playerCharacter.abilities.showActions();
-            playerCharacter.abilities.doAction(scanner.nextLine());
+            playerCharacter.checkMap();
+            playerCharacter.abilities.talk(scanner.nextLine());
         } while (playerCharacter.hp < 1);
 
     }

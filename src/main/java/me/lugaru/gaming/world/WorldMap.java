@@ -20,6 +20,7 @@ public class WorldMap {
     }
 
     public void initializeMap() {
+
             areas.add("Home Village");
             people.add("Village Elder");
             people.add("Terry");
