@@ -16,8 +16,8 @@ public class ArmorSet {
     }
 
     public void addArmor(ArmorPeice armor){
-        if (armor.type == "Helmet") {
-
-        }
+//        if (armor.type == "Helmet") {
+//
+//        }
     }
 }
