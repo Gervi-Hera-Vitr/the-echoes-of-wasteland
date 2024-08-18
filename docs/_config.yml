@@ -40,8 +40,8 @@ subtitle                 : "A Goo Game! 😜"
 name                     : "Cpt. Lugaru"
 description              : >-
   A bit of experimentation in game theory and practice among good friends; to see if we can publish player character behavior attributes and real world characteristics as an injectable dependency in a portable library.
-url                      : "https://captainlugaru.github.io/the-echoes-of-wasteland"
-baseurl                  : "" # "/the-echoes-of-wasteland"
+url                      : "https://captainlugaru.github.io"
+baseurl                  : "/the-echoes-of-wasteland"
 repository               : "CaptainLugaru/the-echoes-of-wasteland"
 teaser                   : "/rezs/images/TheEchoesSplash.png"
 logo                     : "/rezs/images/TheEchoesThumb.png"
