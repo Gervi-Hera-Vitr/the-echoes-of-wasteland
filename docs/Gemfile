@@ -1,17 +1,25 @@
 source "https://rubygems.org"
+
 # Run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
 #
 # To upgrade, run `bundle update github-pages`.
 
-gem "github-pages", "~> 232", group: :jekyll_plugins
-gem "minima", "~> 2.5.1"
+gem "rake"
+gem "faraday-retry"
+gem "tzinfo-data"
+gem "minimal-mistakes-jekyll"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17.0"
+    gem "jemoji"
+    gem "jekyll-asciidoc"
+    gem "github-pages"
+    gem "jekyll-paginate"
+    gem "jekyll-sitemap"
+    gem "jekyll-gist"
+    gem "jekyll-feed"
+    gem "jekyll-include-cache"
+    gem "jekyll-algolia"
+    gem "jekyll-archives"
 end
-
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
-# do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]

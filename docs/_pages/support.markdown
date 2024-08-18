@@ -1,6 +1,37 @@
-# Supporting `The Echoes of the Wasteland` Site
+---
+layout: single
+author: Lugaru
+classes: wide
+title: "Supporting `this` site"
+description: "These are the steps we take to support the Echoes of the Wasteland site building locally."
+category: support
+date: 2024-08-14 13:54:00 -0400
+permalink: /support/
+toc: true
+toc_label: "Contributor's Guide"
+toc_icon: "fas fa-book-open"
+toc_sticky: true
+author_profile: true
+sidebar:
+  - title: "on Player Character"
+    image: rezs/images/TheEchoesProtagonistBadge.png
+    image_alt: "The Echoes Protagonist Badge"
+    text: "The final purpose of this library is to learn how to develop character arcs and capture the essence in a software artifact."
+  - title: "Contributing"
+    text: "Please see our [Contributor's Guide](https://github.com/CaptainLugaru/the-echoes-of-wasteland/blob/main/CONTRIBUTING.md) and join our [community](https://github.com/CaptainLugaru/the-echoes-of-wasteland/graphs/contributors/)!"
+  - nav: support
+header:
+  overlay_image: rezs/images/TheEchoesOfTheWasteland.png  
+  show_overlay_excerpt: true
+  caption: "The Echoes of the Wasteland"
+  excerpt: Guide to build and deploy a Jekyll site for the Echoes of the Wasteland.
+#  overlay_filter:
+#    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+#    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+#    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+---
 
-_This is a short description of how we maintain our game site._
+_{{page.description}}_
 
 We use [**_GitHub Actions_**](https://jekyllrb.com/docs/github-pages/ "Jekyll GitHub Actions") to build and deploy a [Jekyll site](https://jekyllrb.com/ "Jekyll").
 
@@ -20,7 +51,7 @@ brew install coreutils curl asdf
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 ```
 
-See [docs for `asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git`](https://github.com/asdf-vm/asdf-ruby "asdf plugin ruby home") for more details.
+See docs for [`asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git`](https://github.com/asdf-vm/asdf-ruby "asdf plugin ruby home") for more details.
 
 If the Ruby plugin is already installed, then:
 
@@ -68,7 +99,6 @@ Should see `3.3.4`, like so:
 **Navigate to your project `docs` folder and run:**
 
 ```shell
-cd ..
 docs_folder=${PWD##*/}
 docs_folder=${docs_folder:-/}
 
@@ -85,24 +115,29 @@ Or install Jekyll from anywhere with `gem install jekyll`.
 And create the new site with `jekyll new --skip-bundle .`
 
 ```shell
-cd ..
 jekyll new --force --skip-bundle .
 ```
 
 ## Building EXISTING site locally
 
-_Make sure `bundle` is installed in your **docs** folder._
+_Make sure `bundle` is installed globally or in project for your **docs** folder to work as site root._
 
 ```shell
-cd ..
 bundle install
 ```
 
 IMPORTANT: [**_GitHub Pages Documentation!_**](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll "GitHub Pages Documentation")
 
+## Theming Jekyll
 
+- about [Themes](https://jekyllrb.com/docs/themes/)
+- our current theme ([Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes))
 
+### Where are my assets?
 
 ## Additional Resources
 
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/ "Markdown Guide dot Org")
+- [Overriding theme defaults](https://jekyllrb.com/docs/themes/#overriding-theme-defaults "Jekyll Themes")
+- [Jekyll default configuration](https://jekyllrb.com/docs/configuration/default/ "Jekyll Configuration")
+- [on GitHub Pages & Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll "Setting up a GitHub Pages site with Jekyll")

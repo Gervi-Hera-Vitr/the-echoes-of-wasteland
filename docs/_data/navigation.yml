@@ -1,0 +1,51 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Docs"
+    url: /support/
+  - title: "Sitemap"
+    url: /sitemap/
+  - title: "Maintainer"
+    url: https://github.com/CaptainLugaru/
+  - title: "Community"
+    url: https://github.com/Gotham-Village/
+
+support:
+  - title: Getting Started
+    children:
+      - title: "Local Mac setup"
+        url: /support/#setting-up-your-local-mac-box
+      - title: "on Jekyll site"
+        url: /support/#install-jekyll-for-a-new-site
+      - title: "building Docs site locally"
+        url: /support/#building-existing-site-locally
+      - title: "theming Jekyll"
+        url: /support/#theming-jekyll
+      - title: "additional resources"
+        url: /support/#additional-resources
+
+  - title: Categories
+    children:
+      - title: "Archive by Year"
+        url: /archive/year/
+      - title: "Markup Tag"
+        url: /tags/markup/
+      - title: "All Tags"
+        url: /tags/
+      - title: "Gaming Category"
+        url: /gaming/
+      - title: "Portfolio Category"
+        url: /portfolio/
+      - title: "Archive by Category"
+        url: /categories/
+      - title: "Site Map"
+        url: /sitemap/
+
+  - title: External Resources
+    children:
+      - title: "GitHub Pages"
+        url: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
+      - title: "Minimal Mistakes"
+        url: https://mmistakes.github.io/minimal-mistakes/
+
