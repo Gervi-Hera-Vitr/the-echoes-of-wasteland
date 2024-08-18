@@ -7,7 +7,6 @@ source "https://rubygems.org"
 # To upgrade, run `bundle update github-pages`.
 
 gem "rake"
-gem "faraday-retry"
 gem "tzinfo-data"
 gem "minimal-mistakes-jekyll"
 
