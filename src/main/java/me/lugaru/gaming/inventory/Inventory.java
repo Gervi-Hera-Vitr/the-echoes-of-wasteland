@@ -18,12 +18,11 @@ public class Inventory {
     }
 
     public void addItem(Item acquiredItem) {
-        if acquiredItem instanceof
-        items.add(acquiredItem);
+       items.add(acquiredItem);
     }
 
-    public void equipArmor(Armor acquiredArmor) {
-        equippedArmor.add(acquiredArmor);
+    public void equipArmor(ArmorPeice acquiredArmor) {
+        equippedArmor.addArmor(acquiredArmor);
     }
 
     public void equipWeapon(Weapon aquiredWeapon){

@@ -7,9 +7,9 @@ public class Item {
      */
     int value;
     int amount;
-    int weight;
+    double weight;
 
-    public Item(String name, int value, int amount, int weight) {
+    public Item(String name, int value, int amount, double weight) {
         this.name = name;
         this.value = value;
         this.amount = amount;

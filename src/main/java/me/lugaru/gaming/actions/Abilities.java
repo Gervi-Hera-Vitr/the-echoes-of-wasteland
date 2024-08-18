@@ -2,7 +2,7 @@ package me.lugaru.gaming.actions;
 
 import me.lugaru.gaming.character.Hero;
 import me.lugaru.gaming.inventory.Item;
-import me.lugaru.gaming.inventory.Armor;
+import me.lugaru.gaming.inventory.ArmorPeice;
 
 
 import java.util.Scanner;
@@ -225,7 +225,8 @@ Scanner scan = new Scanner(System.in);
                            Inventory size: %d
                             %s
                         %n""",
-                thisHero.inventory.equippedArmor.stream().map(Armor::toString).collect(Collectors.joining("\n","- ",";")),
+                //thisHero.inventory.equippedArmor.stream().map(ArmorPeice::toString).collect(Collectors.joining("\n","- ",";")),
+                thisHero.inventory.equippedArmor.toString(),
                 thisHero.inventory.equippedWeapon.toString(),
                 thisHero.inventory.items.size(),
                 myItemsString);
