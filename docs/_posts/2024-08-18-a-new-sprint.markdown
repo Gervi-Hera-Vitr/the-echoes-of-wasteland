@@ -23,4 +23,6 @@ Today Lugaru and I will release the baseline to start the sprint.
 One other important deliverable for today is the started sprint objective,
 which we will capture in a separate post.
 
+[-- R!dd13r](https://github.com/rdd13r "R!dd13r")
+
 ___

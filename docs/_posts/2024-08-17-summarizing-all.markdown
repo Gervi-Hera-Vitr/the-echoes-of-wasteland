@@ -15,4 +15,6 @@ And, from that we can see our first two deliverables:
 
 This will also give us opportunities to refresh our ML skills in addition to our coding skills.
 
+[-- Lugaru](https://github.com/CaptainLugaru "Captain Lugaru")
+
 ___

@@ -14,4 +14,7 @@ These also included adding some ML magic to a character definition, not just sen
 
 Please follow us, join us, and see what great fun we can have together!
 
+
+[-- Ominous](https://github.com/OminousDude "Anominous Dude")
+
 ___

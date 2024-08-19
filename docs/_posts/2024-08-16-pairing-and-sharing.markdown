@@ -17,4 +17,7 @@ But outside of that, it was a fun creative time.
 
 `rdd13r` continues to work on setting up our community site.
 Most probably `lugaru` will complete this over the weekend with him.
+
+[-- Ominous](https://github.com/OminousDude "Anominous Dude")
+
 ___

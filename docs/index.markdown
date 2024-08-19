@@ -40,7 +40,8 @@ _We follow time-honored traditions of our mentors'
 
 ___
 
-See [**_instructions for supporting_**](/support/ "Support") the _Echoes of the Wasteland_, our **community project**.
+See [**_instructions for supporting_**]({{ site.baseurl }}/support/ "Support") the _Echoes of the Wasteland_,
+our **community project**.
 
 ___
 

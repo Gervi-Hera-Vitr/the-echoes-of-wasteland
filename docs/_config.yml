@@ -15,6 +15,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-algolia
   - jekyll-archives
+  - faraday-retry
 
 
 # mimic GitHub Pages with --safe
@@ -26,6 +27,7 @@ whitelist:
   - jekyll-include-cache
   - jekyll-algolia
   - jekyll-archives
+  - faraday-retry
 
 ### Select different for GitHub Pages which will not use Gems as local does.
 remote_theme           : "mmistakes/minimal-mistakes"

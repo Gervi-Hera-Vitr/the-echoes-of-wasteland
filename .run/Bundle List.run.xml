@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Local-Serve" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="rm -rf _site &amp;&amp; bundle install &amp;&amp;  bundle exec jekyll serve " />
+  <configuration default="false" name="Bundle List" type="ShConfigurationType">
+    <option name="SCRIPT_TEXT" value="bundle list" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />
