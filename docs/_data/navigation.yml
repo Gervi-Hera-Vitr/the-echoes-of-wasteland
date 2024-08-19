@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "Docs"
     url: /support/
+  - title: "Actions"
+    url: https://github.com/CaptainLugaru/the-echoes-of-wasteland/actions
   - title: "Maintainer"
     url: https://github.com/CaptainLugaru/
   - title: "Community"
