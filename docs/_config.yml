@@ -16,6 +16,7 @@ plugins:
   - jekyll-algolia
   - jekyll-archives
 
+
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -27,7 +28,6 @@ whitelist:
   - jekyll-archives
 
 ### Select different for GitHub Pages which will not use Gems as local does.
-#theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 

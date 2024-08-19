@@ -4,8 +4,6 @@ main:
     url: /about/
   - title: "Docs"
     url: /support/
-  - title: "Sitemap"
-    url: /sitemap/
   - title: "Maintainer"
     url: https://github.com/CaptainLugaru/
   - title: "Community"
