@@ -11,6 +11,38 @@ main:
   - title: "Community"
     url: https://github.com/Gotham-Village/
 
+development:
+  - title: Development Setup
+    url: /development/
+    children:
+      - title: "Overview, (top)"
+        url: /development/
+      - title: "- `sdk`"
+        description: "Kotlin, Java"
+        url: /development/#sdk
+      - title: "- `asdf`"
+        description: "Ruby"
+        url: /development/#asdf
+      - title: "- `conda`"
+        description: "Python"
+        url: /development/#conda
+      - title: "- `volta`"
+        description: "Node.js, JS, TS"
+        url: /development/#volta
+      - title: "- `docker`"
+        description: "desktop Docker"
+        url: /development/#docker
+      - title: "- `jupyter`"
+        description: "Jupyter Labs Notebook"
+        url: /development/#jupyter
+      - title: "- IDEs"
+        description: "IDEs used as primary development tools"
+        url: /development/#ides
+      - title: "- change log -"
+        description: "This guide's change log"
+        url: /development/#log
+
+
 support:
   - title: Getting Started
     children:

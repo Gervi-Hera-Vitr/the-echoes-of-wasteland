@@ -20,6 +20,7 @@ sidebar:
   - title: "Contributing"
     text: "Please see our [Contributor's Guide](https://github.com/CaptainLugaru/the-echoes-of-wasteland/blob/main/CONTRIBUTING.md) and join our [community](https://github.com/CaptainLugaru/the-echoes-of-wasteland/graphs/contributors/)!"
   - nav: support
+  - nav: development
 header:
   overlay_image: rezs/images/TheEchoesOfTheWasteland.png  
   show_overlay_excerpt: true
@@ -34,6 +35,9 @@ header:
 _{{page.description}}_
 
 We use [**_GitHub Actions_**](https://jekyllrb.com/docs/github-pages/ "Jekyll GitHub Actions") to build and deploy a [Jekyll site](https://jekyllrb.com/ "Jekyll").
+
+Start with the documentation site here;<br/>
+_then_, move to the [**coding setup in the next section**]({{ site.baseurl }}/development/ "Development Setup"). 
 
 ## Setting up your local Mac box
 
@@ -134,6 +138,8 @@ IMPORTANT: [**_GitHub Pages Documentation!_**](https://docs.github.com/en/pages/
 - our current theme ([Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes))
 
 ### Where are my assets?
+
+NEXT: please see the [**coding setup section**]({{ site.baseurl }}/development/ "Development Setup")!
 
 ## Additional Resources
 
