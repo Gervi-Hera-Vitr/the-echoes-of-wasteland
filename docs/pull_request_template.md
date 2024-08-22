@@ -11,4 +11,3 @@ My favorite issue #?
 - [ ] #[FEATURE NAME] is the issue;
 - [ ] describe added value here;
 - [ ] and, completion description.
-
