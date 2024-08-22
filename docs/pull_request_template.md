@@ -1,13 +1,14 @@
 ---
-name: Completing and merging.
-about: Incremental PR
-title: "[DATE]: [FEATURE NAME]"
-labels: 
 assignees: lugaru
 ---
 
-## Summary
+# My Awesome Pull Request
+
+My favorite issue #?
+
+## My Summary of Changes
 
 - [ ] #[FEATURE NAME] is the issue;
 - [ ] describe added value here;
 - [ ] and, completion description.
+
