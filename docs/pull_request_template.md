@@ -9,4 +9,5 @@ assignees: lugaru
 ## Summary
 
 - [ ] #[FEATURE NAME] is the issue;
+- [ ] describe added value here;
 - [ ] and, completion description.
