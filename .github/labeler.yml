@@ -1,0 +1,18 @@
+root:
+  - changed-files:
+      - any-glob-to-any-file: '*'
+
+actions:
+  - changed-files:
+      - any-glob-to-any-file: '.github/**'
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file: 'docs/**'
+
+structural:
+  - changed-files:
+      - any-glob-to-any-file: ['about.text', 'about.txt']
+
+release:
+  - base-branch: 'main'

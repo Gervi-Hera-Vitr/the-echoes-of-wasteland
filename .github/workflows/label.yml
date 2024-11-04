@@ -1,0 +1,29 @@
+name: "Label the Echoes Pull Request"
+run-name: "Label Pull Request with IAW Labeling Guidelines examining content by ${{ github.actor }} with ${{ github.event_name }}"
+
+on:
+  pull_request_target:
+  workflow_dispatch:
+
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: true
+
+jobs:
+  label-pull-request-iaw-labeling-guidelines:
+    timeout-minutes: 1
+    runs-on: self-hosted
+    name: "Label Echoes Pull Request with IAW Labeling Guidelines examining content"
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    strategy:
+      fail-fast: true
+
+    steps:
+      - name: "Label Echoes Pull Request pushing labels to GitHub Pull Request"
+        uses: actions/labeler@bb8f002e4f8015d017de7c01b983424cb4c6de3f
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"

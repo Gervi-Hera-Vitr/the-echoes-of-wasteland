@@ -1,54 +1,42 @@
 # rdd13r on 2024-08-12
-
-name: Lugaru CI
+name: "Lugaru Build Sanity Checks on each Push"
+run-name: "Build Host Environment on each Push by ${{ github.actor }} with ${{ github.event_name }}"
 
 on:
   push:
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  discussions: write
+  issues: write
+  pull-requests: write
+  actions: read
+  statuses: read
+
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: true
 
 jobs:
+  build-echoes-on-every-push:
+    timeout-minutes: 5
+    runs-on: self-hosted
+    name: "Build Echoes for sanity checks on every push"
 
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    strategy:
+      fail-fast: false
 
     steps:
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: "Checkout the Echoes repository source code at root"
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        timeout-minutes: 1
 
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
+      - name: "Build the Echoes using indigenous gradle, with gradle wrapper handover if present"
+        timeout-minutes: 2
+        run: gradle build
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          build-scan-publish: true
-          build-scan-terms-of-use-url: "https://gradle.com/terms-of-service"
-          build-scan-terms-of-use-agree: "yes"
-
-      - name: Build with Gradle Wrapper
-        run: ./gradlew build
-
-      - name: Generate and submit dependency graph
+      - name: "Generate and submit Gradle dependency graph"
         uses: gradle/actions/dependency-submission@v4
-
-# References:
-#
-#   General on Workflows:
-# - https://docs.github.com/en/actions
-# - https://github.com/actions
-#
-#   This workflow uses the following GitHub-hosted runners:
-# - https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
-# - https://github.com/gradle/actions
-#
-#   Attestations:
-# - https://github.com/actions/attest-build-provenance
-#
-#   Marketplace:
-# - https://github.com/marketplace?type=actions

@@ -1,44 +1,55 @@
 # rdd13r on 2024-08-13
-
-name: "CodeQL"
+name: "Echoes CodeQL Quality Scan" # https://github.com/github/codeql-action/
+run-name: "CodeQL Quality Scan on [${{ github.repository }}] @ ${{ github.ref }} by ${{ github.actor }} with ${{ github.event_name }}"
 
 on:
   push:
+    branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '52 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  security-events: write
+  packages: read
+  actions: read
+  contents: read
+
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: true
 
 jobs:
 
-  analyze:
-
-    name: Analyze (${{ matrix.language }})
-    runs-on: ${{ matrix.language == 'java-kotlin' && 'macos-latest' || 'ubuntu-latest' }}
-    timeout-minutes: ${{ (matrix.language == 'java-kotlin' && 120) || 360 }}
-    permissions:
-      security-events: write
-      packages: read
-      actions: read
-      contents: read
+  echoes-code-security-scan-with-codeql:
+    timeout-minutes: 7
+    runs-on: self-hosted
+    name: "CodeQL Quality Scan for Echoes with (${{ matrix.language }})"
 
     strategy:
       fail-fast: false
       matrix:
         include:
-        - language: java-kotlin
-          build-mode: autobuild
+          - language: java-kotlin
+            build-mode: autobuild
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: "Checkout Echoes repository source code"
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        timeout-minutes: 1
 
-    # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: ${{ matrix.language }}
-        build-mode: ${{ matrix.build-mode }}
+      - name: "Initialize Echoes CodeQL Quality Analysis Action"
+        uses: github/codeql-action/init@48c3e2675613624ea7978e5d132169f97bc3b578
+        timeout-minutes: 4
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
-      with:
-        category: "/language:${{matrix.language}}"
+      - name: "Echoes CodeQL Quality Analysis Action on ${{ matrix.language }}"
+        uses: github/codeql-action/analyze@48c3e2675613624ea7978e5d132169f97bc3b578
+        timeout-minutes: 5
+        with:
+          category: "/language:${{matrix.language}}"
+
