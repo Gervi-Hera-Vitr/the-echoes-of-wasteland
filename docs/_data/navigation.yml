@@ -5,7 +5,7 @@ main:
   - title: "Docs"
     url: /support/
   - title: "GitHub"
-    sub:
+    submenu:
       - title: "GitHub Discussions"
         url: https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/discussions
         description: "Community forum"
