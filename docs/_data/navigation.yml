@@ -4,12 +4,26 @@ main:
     url: /about/
   - title: "Docs"
     url: /support/
-  - title: "Actions"
-    url: https://github.com/CaptainLugaru/the-echoes-of-wasteland/actions
+  - title: "GitHub"
+    url: https://github.com/Gervi-Hera-Vitr
+    children:
+      - title: "GitHub Discussions"
+        url: https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/discussions
+        description: "Community forum"
+      - title: "Project Learning Trails"
+        url: https://github.com/orgs/Gervi-Hera-Vitr/projects/1
+        description: "Gervi Héra Viskr Learning Trails"
+      - title: "the Echoes CICD pipelines"
+        url: https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions
+        description: "CICD pipelines - GitHub Actions"
+      - title: "Sister Community 'the village'"
+        url: https://github.com/Gotham-Village
+        description: "Adult Hacker Community of Mentors"
+      - title: "Captain's School"
+        url: https://github.com/Mimis-Gildi
+        description: "Mímis Gildi School"
   - title: "Maintainer"
     url: https://github.com/CaptainLugaru/
-  - title: "Community"
-    url: https://github.com/Gotham-Village/
 
 development:
   - title: Development Setup
