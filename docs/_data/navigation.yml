@@ -5,7 +5,6 @@ main:
   - title: "Docs"
     url: /support/
   - title: "GitHub"
-    url: https://github.com/Gervi-Hera-Vitr
     children:
       - title: "GitHub Discussions"
         url: https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/discussions
@@ -16,6 +15,9 @@ main:
       - title: "the Echoes CICD pipelines"
         url: https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions
         description: "CICD pipelines - GitHub Actions"
+      - title: "Community"
+        url: https://github.com/Gervi-Hera-Vitr
+        description: "Gervi Héra Vitr Community"
       - title: "Sister Community 'the village'"
         url: https://github.com/Gotham-Village
         description: "Adult Hacker Community of Mentors"
