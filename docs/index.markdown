@@ -1,5 +1,5 @@
 ---
-title: "The Echoes of the Wasteland"
+title: "The Echoes of Wasteland"
 layout: home
 author: Lugaru
 classes:
