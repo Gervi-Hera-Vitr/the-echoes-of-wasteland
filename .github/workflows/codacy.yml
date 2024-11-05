@@ -30,6 +30,9 @@ jobs:
 
     strategy:
       fail-fast: false
+      matrix:
+        include:
+          - name: codacy
 
     steps:
 

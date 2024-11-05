@@ -21,6 +21,9 @@ jobs:
 
     strategy:
       fail-fast: true
+      matrix:
+        include:
+          - name: iaw
 
     steps:
       - name: "Label Echoes Pull Request pushing labels to GitHub Pull Request"

@@ -3,7 +3,7 @@ run-name: "Jekyll Build and Deploy: ${{ github.actor }} with ${{ github.event_na
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -27,6 +27,9 @@ jobs:
 
     strategy:
       fail-fast: true
+      matrix:
+        include:
+          - name: jekyll
 
     steps:
       - name: "Checkout the Echoes repository source code"
@@ -62,6 +65,9 @@ jobs:
 
     strategy:
       fail-fast: true
+      matrix:
+        include:
+          - name: github-pages
 
     steps:
       - name: "Deploy uploaded Echoes Artifact to GitHub Pages"

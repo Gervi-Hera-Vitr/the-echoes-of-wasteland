@@ -23,6 +23,9 @@ jobs:
     
     strategy:
       fail-fast: true
+      matrix:
+        include:
+          - name: stale
 
     steps:
       - name: "Run Stale Issues and Pull Requests checks in the Echoes repository [${{ github.repository }}] by ${{ github.actor }}"
