@@ -1,10 +1,9 @@
-name: "the Echoes Codacy Security Scan"
+name: "The Echoes Codacy Security Scan"
 run-name: "Codacy Security Scan on Echoes - [${{ github.repository }}] @ ${{ github.ref }} by ${{ github.actor }} with ${{ github.event_name }}"
 # https://app.codacy.com/organizations/gh/Gervi-Hera-Vitr/dashboard
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   schedule:

@@ -13,15 +13,15 @@ toc_icon: "fas fa-book-open"
 toc_sticky: true
 author_profile: true
 sidebar:
-  - title: "Box Setup"
-    image: rezs/images/LocalDevBadge.png
-    image_alt: "The Echoes Protagonist Badge"
-    text: "How do we setup the development environment for the Echoes of Wasteland?"
-  - title: "Java Setup"
-    text: "Configuring local Java development environment."
-  - title: "Python Setup"
-    text: "Configuring local Python development environment."
-  - nav: development
+- title: "Box Setup"
+  image: rezs/images/LocalDevBadge.png
+  image_alt: "The Echoes Protagonist Badge"
+  text: "How do we setup the development environment for the Echoes of Wasteland?"
+- title: "Java Setup"
+  text: "Configuring local Java development environment."
+- title: "Python Setup"
+  text: "Configuring local Python development environment."
+- nav: development
 header:
   overlay_image: rezs/images/TheEchoesOfTheWasteland.png  
   show_overlay_excerpt: true

@@ -39,7 +39,7 @@ jobs:
 
       - name: "Build the Echoes using indigenous gradle, with gradle wrapper handover if present"
         timeout-minutes: 2
-        run: gradle build
+        run: gradle build --scan
 
       - name: "Generate and submit Gradle dependency graph"
         uses: gradle/actions/dependency-submission@v4
