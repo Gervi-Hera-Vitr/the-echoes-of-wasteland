@@ -10,3 +10,5 @@
 ## Reporting a Vulnerability
 
 Use this section to tell people how to report a vulnerability.
+
+[Codacy Dashboard](https://app.codacy.com/gh/Gervi-Hera-Vitr/the-echoes-of-wasteland "Codacy Dashboard")
