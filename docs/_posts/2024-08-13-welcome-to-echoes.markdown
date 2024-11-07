@@ -1,10 +1,10 @@
 ---
 author: Lugaru
 layout: posts
-title: "Welcome to the Echoes of the Wasteland."
+title: "Welcome to The Echoes of Wasteland."
 date: 2024-08-13 05:49:10 -0400
 categories: [ launch ]
-excerpt: "Lugaru launches the Echoes of the Wasteland."
+excerpt: "Lugaru launches the Echoes of Wasteland."
 ---
 
 On this fine Tuesday, my best friend and I asked my father, [rdd13r](https://github.com/rdd13r "R!dd13r"),

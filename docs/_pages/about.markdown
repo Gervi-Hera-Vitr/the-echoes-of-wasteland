@@ -3,13 +3,12 @@ author: Lugaru
 layout: single
 title: About
 permalink: /about/
+greeting: "{{ site.data.lugaru.product.name }} - {{ site.data.lugaru.product.description }}" 
 header:
-#  overlay_color: "#7B68EE"
   overlay_image: rezs/images/TheEchoesOfTheWasteland.png
-#  caption: "Welcome, the Echoes of the Wasteland"
-  caption: "A Goo Game!"
+  caption: "Welcome!"
 ---
 
-The Echoes of the Wasteland - a Goo Game!
-😜
+{{ page.greeting | flatten_up }}
+
 Is an experiment in game development to see if we can encapsulate a player-character entity in a portable library.

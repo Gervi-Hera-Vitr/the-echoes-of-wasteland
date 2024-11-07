@@ -3,7 +3,7 @@ layout: single
 author: Lugaru
 classes: wide
 title: "Supporting `this` site"
-description: "These are the steps we take to support the Echoes of the Wasteland site building locally."
+description: "These are the steps we take to support the Echoes of Wasteland site building locally."
 category: support
 date: 2024-08-14 13:54:00 -0400
 permalink: /support/
@@ -24,8 +24,8 @@ sidebar:
 header:
   overlay_image: rezs/images/TheEchoesOfTheWasteland.png  
   show_overlay_excerpt: true
-  caption: "The Echoes of the Wasteland"
-  excerpt: Guide to build and deploy a Jekyll site for the Echoes of the Wasteland.
+  caption: "The Echoes of Wasteland"
+  excerpt: Guide to build and deploy a Jekyll site for the Echoes of Wasteland.
 #  overlay_filter:
 #    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
 #    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),

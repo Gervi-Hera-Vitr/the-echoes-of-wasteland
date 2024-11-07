@@ -3,7 +3,7 @@ layout: single
 author: Lugaru
 classes: wide
 title: "Echoes of the Wasteland Library Development"
-description: "These are the steps we take to develop the Echoes of the Wasteland library."
+description: "These are the steps we take to develop the Echoes of Wasteland library."
 category: support
 date: 2024-08-19 08:37:03 -0400
 permalink: /development/
@@ -16,7 +16,7 @@ sidebar:
   - title: "Box Setup"
     image: rezs/images/LocalDevBadge.png
     image_alt: "The Echoes Protagonist Badge"
-    text: "How do we setup the development environment for the Echoes of the Wasteland?"
+    text: "How do we setup the development environment for the Echoes of Wasteland?"
   - title: "Java Setup"
     text: "Configuring local Java development environment."
   - title: "Python Setup"
@@ -25,8 +25,8 @@ sidebar:
 header:
   overlay_image: rezs/images/TheEchoesOfTheWasteland.png  
   show_overlay_excerpt: true
-  caption: "The Echoes of the Wasteland"
-  excerpt: Guide to contribute code to the Echoes of the Wasteland library.
+  caption: "The Echoes of Wasteland"
+  excerpt: Guide to contribute code to the Echoes of Wasteland library.
 ---
 
 _{{page.description}}_

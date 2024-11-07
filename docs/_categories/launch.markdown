@@ -5,4 +5,4 @@ date: 2024-08-15 14:09:01 -0400
 categories: [ launch ]
 ---
 
-This category of posts is for the upcoming launch of the Echoes of the Wasteland mod library.
+This category of posts is for the upcoming launch of the Echoes of Wasteland mod library.

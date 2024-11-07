@@ -11,7 +11,7 @@ toc_label: "My Table of Contents"
 toc_icon: "cog"
 ---
 
-Welcome to the Echoes of the Wasteland site.
+Welcome to the Echoes of Wasteland site.
 This is an exploration project to learn more about game development and especially game modding.
 We're a small group of Munchkin Hackers who are passionate about creating beautiful software.
 

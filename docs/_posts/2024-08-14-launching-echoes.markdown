@@ -1,10 +1,10 @@
 ---
 author: R!dd13r
 layout: posts
-title: "Liftoff! Launching the Echoes of the Wasteland."
+title: "Liftoff! Launching The Echoes of Wasteland."
 date: 2024-08-14 10:11:10 -0400
 categories: [ launch ]
-excerpt: "R!dd13r joins the Echoes of the Wasteland."
+excerpt: "R!dd13r joins the Echoes of Wasteland."
 ---
 
 I'm delighted to be invited by a pair of capable Munchkins and help them on their exciting learning journey.
