@@ -13,15 +13,15 @@ toc_icon: "fas fa-book-open"
 toc_sticky: true
 author_profile: true
 sidebar:
-  - title: "on Mímis Gildí`"
-    image: rezs/images/mimis-gildi.png
-    image_alt: "Mimis Gildi logo"
-    text: "Mímis Gildi is a collective of Socratic-style co-mentoring communities at Yggdrasil, satisfying thirst for knowledge at Mímisbrunnr."
-  - title: "Collective"
-    text: "Sharing is caring!"
-  - nav: community
+- title: "on Mímis Gildí`"
+  image: rezs/images/mimis-gildi.png
+  image_alt: "Mimis Gildi logo"
+  text: "Mímis Gildi is a collective of Socratic-style co-mentoring communities at Yggdrasil, satisfying thirst for knowledge at Mímisbrunnr."
+- title: "Collective"
+  text: "Sharing is caring!"
+- nav: community
 header:
-  overlay_image: rezs/images/TheEchoesOfTheWasteland.png  
+  overlay_image: rezs/images/TheEchoesOfTheWasteland.png
   show_overlay_excerpt: true
   caption: "The Echoes of Wasteland"
   excerpt: To learn, to create, to share....
@@ -53,11 +53,12 @@ The community is a long-term effort.
 
 A closed community of founders who are homeschoolers and mSaaS enthusiasts. Occasionally public content is available here. Stay tuned to see what the community is up to.
 
-| [**Kotlin Multiplatform**](https://kotlinlang.org/ "Kotlin Home") | [**Colab**](https://colab.research.google.com/ "Google Colab") | [**Jupyter**](https://jupyter.org/ "Jupyter Notebooks") | [**Python**](https://www.python.org/ "Welcome to Python.org") | [R](https://www.r-project.org/ "R Home") | [_Scala_](https://www.scala-lang.org/ "Scala Home") | [Swift](https://swift.org/ "Swift Home") | [**Android**](https://developer.android.com/ "Android Home") | [_iOS_](https://developer.apple.com/ios/ "iOS Home") | [TypeScript](https://www.typescriptlang.org/ "TypeScript Home") |
+| [**Kotlin Multiplatform**](https://kotlinlang.org/ "Kotlin Home") | [**Colab**](https://colab.research.google.com/ "Google Colab") | [**Jupyter**](https://jupyter.org/ "Jupyter Notebooks") | [**Python**](https://www.python.org/ "Welcome to Python.org") | [R](https://www.r-project.org/ "R Home") | [
+_Scala_](https://www.scala-lang.org/ "Scala Home") | [Swift](https://swift.org/ "Swift Home") | [**Android**](https://developer.android.com/ "Android Home") | [_iOS_](https://developer.apple.com/ios/ "iOS Home") | [TypeScript](https://www.typescriptlang.org/ "TypeScript Home") |
 
 ### Core Values
 
-Mímis` is the **_governance guild_**. 
+Mímis` is the **_governance guild_**.
 Thus is addition to all the _production artifacts_ ranging from implementations to curricula,
 the Gildí maintain the community **_Core Values_** and publish policy.
 
@@ -80,16 +81,16 @@ not just in mathematics, physics, and computer science, but also in the arts, hu
 
 The guild took on its own identity as a chapter of the Northern in philadelphia.
 Over time Northern became very corporate and political.
-Most young hackers having graduated various levels of college entered workforce, 
+Most young hackers having graduated various levels of college entered workforce,
 and soon were disillusioned by the lack of appreciation for intellect in the mundane corporate America.
-In 1997 guild members dispersed in many directions. 
+In 1997 guild members dispersed in many directions.
 Some moved to Amsterdam in search of new freedoms.
 Others traveled the world in search of enlightenment.
 Few have joined the military and federal security services and spookeries.
 
 ### 2000s WileEeeMissalee
 
-Through the dawn of the millennia, 
+Through the dawn of the millennia,
 most of the guild members congregated around a few DoD startups,
 such as MassivelyParallel and ISS Inc., making fun of the government bureaucracy.
 
@@ -111,7 +112,7 @@ Today, these hackers are the members of Mímis Gildí also preserving the Látl�
 ## Epilogue
 
 > Live as if you were living already for the second time and as if you had acted the first time as wrongly as you are about to act now.
-> 
+>
 > <cite>Viktor Emil Frankl</cite>
 
 Best of luck to you, kids! - `rdd13r`

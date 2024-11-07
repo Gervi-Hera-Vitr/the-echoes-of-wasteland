@@ -3,9 +3,9 @@ title: "The Echoes of Wasteland"
 layout: home
 author: Lugaru
 classes:
-  - landing
-  - dark-theme
-  - wide
+- landing
+- dark-theme
+- wide
 toc: true
 toc_label: "My Table of Contents"
 toc_icon: "cog"
