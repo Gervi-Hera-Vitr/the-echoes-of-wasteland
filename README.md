@@ -2,8 +2,8 @@
 [![Build and Deploy the Echoes Jekyll Site with GitHub Pages](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/jekyll-gh-pages.yml)
 <br>
 [![Echoes CodeQL Quality Scan](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/codeql.yml/badge.svg)](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/codeql.yml)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1771a53b7ec64de1ac6e0f8e638124b7)](https://app.codacy.com/gh/Gervi-Hera-Vitr/the-echoes-of-wasteland/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![the Echoes Codacy Security Scan](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/codacy.yml/badge.svg)](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/codacy.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1771a53b7ec64de1ac6e0f8e638124b7)](https://app.codacy.com/gh/Gervi-Hera-Vitr/the-echoes-of-wasteland/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 <br>
 [![Manage Stale Issues and Pull Requests on the Echoes of Wasteland](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/stale.yml/badge.svg)](https://github.com/Gervi-Hera-Vitr/the-echoes-of-wasteland/actions/workflows/stale.yml)
 <br>
