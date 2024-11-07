@@ -4,7 +4,6 @@ run-name: "Codacy Security Scan on Echoes - [${{ github.repository }}] @ ${{ git
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   schedule:
