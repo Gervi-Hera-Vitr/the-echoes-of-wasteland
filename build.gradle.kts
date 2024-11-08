@@ -34,7 +34,6 @@ plugins {
   jacoco
 
   id("io.freefair.lombok")
-//  id("com.gradle.develocity")
 }
 
 repositories {
