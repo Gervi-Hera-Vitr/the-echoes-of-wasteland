@@ -64,4 +64,5 @@ Icon
 # INHERITED FROM JAVA
 
 ### rdd13r: by local actions
-/workflows.csv
+workflows.csv
+!.editorconfig
