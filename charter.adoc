@@ -1,0 +1,22 @@
+= Gervi Héra Vitr: Echoes of Wasteland
+'Captain Lugaru' CaptainLugaru <72951616+CaptainLugaru@users.noreply.github.com>
+v1.0, Friday 08 November 2024
+:description: Captain's Youth Library: The First Book of the Echoes of Wasteland
+:sectnums:
+:sectanchors:
+:sectlinks:
+:icons: font
+:tip-caption: 💡️
+:note-caption: ℹ️
+:important-caption: ❗
+:caution-caption: 🔥
+:warning-caption: ⚠️
+:toc: preamble
+:toclevels: 2
+:toc-title: Echoes of Wasteland
+:keywords: Game Development, Gaming, Book, Jekyll, GitHub Pages, Ruby, Mac OS X, Bundler
+:imagesdir: ./rezs/images
+ifdef::env-name[:relfilesuffix: .adoc]
+
+This product is an experiment in game development to see if we can encapsulate a player-character entity in a portable library.
+A less obvious potential output of this effort is a book of print.
