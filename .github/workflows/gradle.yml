@@ -42,4 +42,4 @@ jobs:
         run: gradle build --scan
 
       - name: "Generate and submit Gradle dependency graph"
-        uses: gradle/actions/dependency-submission@707359876a764dbcdb9da0b0ed08291818310c3d
+        uses: gradle/actions/dependency-submission@e55599fc4d8b81ced2a6234b0b2525b1031e93fa
