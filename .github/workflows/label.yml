@@ -27,6 +27,6 @@ jobs:
 
     steps:
       - name: "Label Echoes Pull Request pushing labels to GitHub Pull Request"
-        uses: actions/labeler@bb8f002e4f8015d017de7c01b983424cb4c6de3f
+        uses: actions/labeler@2755f9261243232aef0a2aee7b18dc8c9874af69
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
