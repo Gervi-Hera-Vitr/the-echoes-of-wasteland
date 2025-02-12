@@ -40,14 +40,14 @@ jobs:
         timeout-minutes: 1
 
       - name: "Initialize Echoes CodeQL Quality Analysis Action"
-        uses: github/codeql-action/init@0701025a8b1600e416be4f3bb5a830b1aa6af01e
+        uses: github/codeql-action/init@affec202b3ff85f13ab60c1d834aa4996994a484
         timeout-minutes: 4
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
 
       - name: "Echoes CodeQL Quality Analysis Action on ${{ matrix.language }}"
-        uses: github/codeql-action/analyze@0701025a8b1600e416be4f3bb5a830b1aa6af01e
+        uses: github/codeql-action/analyze@affec202b3ff85f13ab60c1d834aa4996994a484
         timeout-minutes: 5
         with:
           category: "/language:${{matrix.language}}"
