@@ -1,4 +1,4 @@
 # rdd13r @ 2024-11-04
-java=21.0.5-tem
-gradle=8.10.2
-kotlin=2.0.21
+java=21.0.7-tem
+kotlin=2.1.21
+gradle=8.14.2
