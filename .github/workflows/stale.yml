@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: "Run Stale Issues and Pull Requests checks in the Echoes repository [${{ github.repository }}] by ${{ github.actor }}"
-        uses: actions/stale@ee7ef89499a3de6e4fe1fc1acb994e67c64e0a2a
+        uses: actions/stale@db5d06a4c82d5e94513c09c406638111df61f63e
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-stale: 21
