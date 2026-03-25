@@ -40,7 +40,7 @@ jobs:
         timeout-minutes: 1
 
       - name: "Run Codacy Analysis CLI Action on the Echoes repository and generate SARIF report"
-        uses: codacy/codacy-analysis-cli-action@09916000460adeeedc96b9704f86deba53e2ad5d
+        uses: codacy/codacy-analysis-cli-action@d43360362776a6789b47b99ae8973510854e2d3d
         timeout-minutes: 14
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
