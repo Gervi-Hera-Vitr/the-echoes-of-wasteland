@@ -49,7 +49,7 @@ jobs:
           bundle exec jekyll build -d ../_site
 
       - name: "Package and Upload Project Site built Artifact"
-        uses: actions/upload-pages-artifact@2d163be3ddce01512f3eea7ac5b7023b5d643ce1
+        uses: actions/upload-pages-artifact@0ca16172ca884f0a37117fed41734f29784cc980
         timeout-minutes: 2
         with:
           path: ./_site
